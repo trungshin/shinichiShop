@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+        
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="top-header">
+                <p class="top-header-left">Welcome To The World Of Technology</p>
+                <p class="top-header-right">Call us : 038 515 7990</p>
+            </div>
+            <div class="middle-header">
+                <div class="logo">
+                    <a href="../Home.html" target="_self"><img src="../Images/Screenshot_17.png" id="logo-img"></a>
+                </div>
+                <div id="search_bar">
+                    <input id="userInput" type="text" placeholder="Search for the desired product, category or brand...">
+                    <input id="enter" type="button" value="Search">
+                </div> 
+            </div>
+            <div class="bottom-header">
+                <ul class="main-menu">
+                    <li><a href="../Home.html" id="mn" title="Home">Home</a></li>
+                    <li><a href="News.html" id="mn" title="News">News</a></li>
+                    <li><a href="CustomerCare.html" id="mn" title="Customer Care">Customer Care</a></li>        
+                    <li><a href="About.html" id="mn" title="About us">About us</a></li>
+                    <li><a href="Contact.html" id="mn" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body">
+            <div id="table_form">
+                <form onsubmit="check();">
+                    <table align="center" style="margin-top: 10%;">
+                      <tr style="height: 30px;">
+                        <td>Username:</td>
+                        <td><input id="username" type="text" style="height: 20px;"></td>
+                      </tr>
+                      <tr style="height: 30px;">
+                        <td>Password:</td>
+                        <td><input id="password" type="password" style="height: 20px;"></td>
+                      </tr>
+                      <tr style="text-align: center; height: 40px;">
+                        <td></td>
+                        <td><input type="submit" value="Login" style="height: 25px; width: 100px;"></td>
+                      </tr>
+                    </table>
+                </form>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="footer-newsletter">
+                <div class="newsletter-icon">
+                    <img src="../Images/icon1.png" id="icon">
+                </div>
+                <div class="newsletter-description">
+                    <h3>Sign up for the Shinichi newsletter</h3>
+                    <h5>Don't miss out on thousands of super cool products and shows</h5>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email address" style="height: 37px; width: 300px; padding: 5px;">
+                    <input type="submit" value="Register" style="width: 70px;height: 37px; background-color: rgb(0, 175, 239); color: white; cursor: pointer;">
+                </div>
+            </div>
+            <div class="contact">
+                <div id="hanoi">
+                    <h3>HA NOI</h3><hr>
+                    <h5>No. 10 Cat Linh, Ward 25, Dong Da District</h5>
+                    <h5>Phone: 035.6300.2366</h5>
+                    <h5>Hotline: 0987.598.021 | 0961.254.535</h5>
+                </div>
+                <div id="hochiminh">
+                    <h3>HO CHI MINH CITY</h3><hr>
+                    <h5>26/2/16 Ung Van khiem, Ward 25, Binh Thanh District</h5>
+                    <h5>Phone: 032.6400.2366</h5>
+                    <h5>Hotline: 0917.597.121 | 0951.253.737</h5>
+                </div>
+            </div>
+        </div>
+        <script>
+            var username = document.getElementById('username');
+            var password = document.getElementById('password');
+            function check() {
+                if (username.value == "admin" && password.value == "admin") {
+                    window.alert('Login successfully !!!');
+                }
+                else { window.alert('Wrong username or password !!!'); }
+            }
+        </script>
+    </body>
+</html>
